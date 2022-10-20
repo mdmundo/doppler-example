@@ -6,8 +6,13 @@ spec:
   template:
     spec:
       containers:
-        - name: container-name
-          image: project-folder
-          env:
-            - name: DOPPLER_TOKEN
-              value: $(DOPPLER_TOKEN)
+        - image: 474505160c3
+          securityContext:
+            seccompProfile:
+              type: Unconfined
+            capabilities:
+              add:
+                - SYS_PTRACE
+          stdin: true
+          tty: true
+      restartPolicy: Never
