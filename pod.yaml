@@ -6,7 +6,7 @@ spec:
   template:
     spec:
       containers:
-        - image: 474505160c3
+        - image: app
           securityContext:
             seccompProfile:
               type: Unconfined
