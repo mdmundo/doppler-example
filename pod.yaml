@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: deploymentName
 spec:
-  strategy: Recreate
   template:
     metadata:
       name: podName
