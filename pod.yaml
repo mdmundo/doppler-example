@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
         - name: containerName
-          image: alpine
+          image: folderContainingDockerfile
           env:
             - name: DOPPLER_TOKEN
               value: $(DOPPLER_TOKEN)
