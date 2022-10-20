@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deploymentName
+  name: deployment-name
 spec:
   template:
     metadata:
       name: podName
     spec:
       containers:
-        - name: containerName
-          image: folderContainingDockerfile
+        - name: container-name
+          image: project-folder
           env:
             - name: DOPPLER_TOKEN
               value: $(DOPPLER_TOKEN)
