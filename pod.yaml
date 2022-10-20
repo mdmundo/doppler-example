@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploymentName
+spec:
+  strategy: Recreate
+  template:
+    metadata:
+      name: podName
+    spec:
+      containers:
+        - name: containerName
+          image: alpine
+          env:
+            - name: DOPPLER_TOKEN
+              value: $(DOPPLER_TOKEN)
