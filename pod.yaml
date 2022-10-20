@@ -4,8 +4,6 @@ metadata:
   name: deployment-name
 spec:
   template:
-    metadata:
-      name: podName
     spec:
       containers:
         - name: container-name
